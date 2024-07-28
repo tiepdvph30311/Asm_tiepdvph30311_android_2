@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+    android:gravity="center">
+
+<EditText
+    android:id="@+id/etUsername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Username" />
+
+<EditText
+    android:id="@+id/etPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Password"
+    android:inputType="textPassword" />
+
+<EditText
+    android:id="@+id/etConfirmPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Confirm Password"
+    android:inputType="textPassword" />
+
+<EditText
+    android:id="@+id/etGender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Gender" />
+
+    <EditText
+        android:id="@+id/etDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth (yyyy-mm-dd)"
+        android:focusable="false"
+        android:clickable="true" />
+
+<EditText
+    android:id="@+id/etAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Address" />
+
+<EditText
+    android:id="@+id/etEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Email" />
+
+<EditText
+    android:id="@+id/etHeight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Height (cm)" />
+
+<EditText
+    android:id="@+id/etWeight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Weight (kg)" />
+
+<Button
+    android:id="@+id/btnRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Đăng Ký"
+    android:backgroundTint="#174595"
+    android:textColor="@android:color/white"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:layout_gravity="center"/>
+</LinearLayout>
+

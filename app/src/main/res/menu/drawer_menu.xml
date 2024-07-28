@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Profile"
+            android:icon="@drawable/use"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:icon="@drawable/setting"/>
+        <item
+            android:id="@+id/nav_book"
+            android:title="Book"
+            android:icon="@drawable/sach"/>
+    </group>
+</menu>

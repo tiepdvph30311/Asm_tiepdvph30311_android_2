@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nam"
+            android:contentDescription="Profile Image"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên: Nguyễn Thị A"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính: Nữ"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày tháng năm sinh: 01/01/2001"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: Tổ A, phường B, Quận C"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: nta2001@gmail.com"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao: 160 cm"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng: 45 kg"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ số BMI ≈ 17,58"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắc nhở: Với chỉ số BMI khoảng 17,58, bạn thuộc nhóm gầy."
+            android:textColor="#FF0000"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lời khuyên: Tăng cường chế độ ăn uống với thực phẩm giàu dinh dưỡng và calo như các loại hạt, bơ, thịt, ngũ cốc, v.v. Kết hợp tập luyện sức mạnh để tăng khối lượng cơ bắp và cải thiện sức khỏe tổng thể."
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
