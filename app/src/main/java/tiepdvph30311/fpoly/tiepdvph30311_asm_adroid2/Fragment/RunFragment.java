@@ -1,6 +1,7 @@
 package tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -23,6 +24,7 @@ public class RunFragment extends Fragment implements SensorEventListener {
     private boolean isSensorPresent;
     private int stepCount;
     private TextView stepCountTextView;
+    private int userId;
 
     @Nullable
     @Override
@@ -30,6 +32,10 @@ public class RunFragment extends Fragment implements SensorEventListener {
         View view = inflater.inflate(R.layout.fragment_run, container, false);
 
         stepCountTextView = view.findViewById(R.id.stepCountTextView);
+
+        // Get the user ID from SharedPreferences
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
+        userId = sharedPreferences.getInt("userId", -1); // Assuming -1 is an invalid user ID
 
         sensorManager = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
         if (sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER) != null) {
@@ -63,7 +69,7 @@ public class RunFragment extends Fragment implements SensorEventListener {
         if (event.sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
             stepCount = (int) event.values[0];
             stepCountTextView.setText(String.valueOf(stepCount));
-            // Lưu stepCount vào cơ sở dữ liệu
+            // Save stepCount to the database
             saveStepCountToDatabase(stepCount);
         }
     }
@@ -74,8 +80,8 @@ public class RunFragment extends Fragment implements SensorEventListener {
     }
 
     private void saveStepCountToDatabase(int stepCount) {
-        // Gọi phương thức lưu stepCount vào cơ sở dữ liệu SQLite
+        // Call the method to save stepCount to the SQLite database
         HoatDongVanDongDao hoatDongVanDongDao = new HoatDongVanDongDao(getActivity());
-        hoatDongVanDongDao.insertStepCount(stepCount);
+        hoatDongVanDongDao.insertStepCount(stepCount, userId);
     }
 }

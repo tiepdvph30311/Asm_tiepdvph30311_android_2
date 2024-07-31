@@ -145,6 +145,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "FOREIGN KEY(maNguoiDung) REFERENCES users(id))";
         db.execSQL(createHoatDongVanDongTable);
 
+
         // Tạo bảng Hoạt Động Tinh Thần
         String createHoatDongTinhThanTable = "CREATE TABLE HoatDongTinhThan (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, " +

@@ -16,9 +16,9 @@ import com.google.android.material.navigation.NavigationView;
 
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Dao.UserDao;
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment.HoatDongTinhThanFragment;
+import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment.HoatDongVanDongFragment;
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment.HomeFragment;
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment.ProfileFragment;
-import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.Fragment.SettingFragment;
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.R;
 import tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.model.User;
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new ProfileFragment();
                 }
                 else if (itemId == R.id.nav_setting) {
-                    selectedFragment = new SettingFragment();
+                    selectedFragment = new HoatDongVanDongFragment();
                 }else if (itemId == R.id.nav_book) {
                     selectedFragment = new HoatDongTinhThanFragment();
                 }

@@ -1,18 +1,16 @@
 package tiepdvph30311.fpoly.tiepdvph30311_asm_adroid2.model;
 
 public class HoatDongVanDong {
-    private int maHoatDongVanDong;
+    private int id;
     private int maNguoiDung;
     private String ngayThucHien;
     private int soBuocChan;
-    private int mucTieu;
-    private int daDatDuoc;
+    private String mucTieu;
+    private String daDatDuoc;
 
-    public HoatDongVanDong() {
-    }
-
-    public HoatDongVanDong(int maHoatDongVanDong, int maNguoiDung, String ngayThucHien, int soBuocChan, int mucTieu, int daDatDuoc) {
-        this.maHoatDongVanDong = maHoatDongVanDong;
+    // Constructor, getters, and setters
+    public HoatDongVanDong(int id, int maNguoiDung, String ngayThucHien, int soBuocChan, String mucTieu, String daDatDuoc) {
+        this.id = id;
         this.maNguoiDung = maNguoiDung;
         this.ngayThucHien = ngayThucHien;
         this.soBuocChan = soBuocChan;
@@ -20,12 +18,12 @@ public class HoatDongVanDong {
         this.daDatDuoc = daDatDuoc;
     }
 
-    public int getMaHoatDongVanDong() {
-        return maHoatDongVanDong;
+    public int getId() {
+        return id;
     }
 
-    public void setMaHoatDongVanDong(int maHoatDongVanDong) {
-        this.maHoatDongVanDong = maHoatDongVanDong;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getMaNguoiDung() {
@@ -52,19 +50,24 @@ public class HoatDongVanDong {
         this.soBuocChan = soBuocChan;
     }
 
-    public int getMucTieu() {
+    public String getMucTieu() {
         return mucTieu;
     }
 
-    public void setMucTieu(int mucTieu) {
+    public void setMucTieu(String mucTieu) {
         this.mucTieu = mucTieu;
     }
 
-    public int getDaDatDuoc() {
+    public String getDaDatDuoc() {
         return daDatDuoc;
     }
 
-    public void setDaDatDuoc(int daDatDuoc) {
+    public void setDaDatDuoc(String daDatDuoc) {
         this.daDatDuoc = daDatDuoc;
+    }
+
+    @Override
+    public String toString() {
+        return "Date: " + ngayThucHien + ", Steps: " + soBuocChan;
     }
 }

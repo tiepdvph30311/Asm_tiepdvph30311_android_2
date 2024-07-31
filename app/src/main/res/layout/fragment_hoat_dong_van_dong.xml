@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRunStop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/circle_shape"
+        android:text="Run"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRunStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Steps: 0"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSteps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Time: 00:00"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/lvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTimer"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
